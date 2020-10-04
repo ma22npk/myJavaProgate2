@@ -55,15 +55,44 @@ class Main {
     // for (int i = 1; i <= 10; i++) {
     // System.out.println(i + "回目のループです");
     // }
-    // 繰り返し処理 [END] ================================
-    // break処理 [START] ---------------------------------------
+
+    // break処理 [START] -----------------------------------
     // ループを５回で止める
-    for (int i = 1; i <= 10; i++) {
-      if (i > 5) {
-        break;
-      }
-      System.out.println(i + "回目のループです");
+    // for (int i = 1; i <= 10; i++) {
+    // if (i > 5) {
+    // break;
+    // }
+    // System.out.println(i + "回目のループです");
+    // }
+    // break処理 [END] -------------------------------------
+    // continue処理 [START] --------------------------------
+    // 10の倍数の間で３の倍数の時は処理をスキップして次のループを実行する。
+    // 結果:1,2,4,5,7,8,10
+    // for (int i = 1; i <= 10; i++) {
+    // if (i % 3 == 0) {
+    // continue;
+    // }
+    // System.out.println(i);
+    // }
+    // continue処理 [END] ----------------------------------
+    // 配列 [START] ----------------------------------------
+    // int方の要素を持つ配列はint[], String方の要素を持つ配列はString[]と記述
+    int[] numbers = { 5, 13, 29 };
+    String[] names = { "John", "Kate", "Bob" };
+    // 私の名前は Bob です。
+    System.out.println("私の名前は" + names[2] + "です");
+    // 私の年齢は 13際 です。
+    System.out.println("私の年齢は" + numbers[1] + "歳です");
+    // 結果:john kate bob
+    for (int i = 0; i < names.length; i++) {
+      System.out.println(names[i]);
     }
-    // break処理 [END] -----------------------------------------
+    // 結果:john kate bob（上記と同じでシンプルにかける）
+    for (String name : names) {
+      System.out.println(name);
+    }
+    // 配列 [END] ------------------------------------------
+
+    // 繰り返し処理 [END] ====================================
   }
 }
