@@ -14,5 +14,15 @@ class Main {
     System.out.println(false);
     System.out.println(6 + 2 == 5);
     System.out.println(6 / 2 != 2);
+    // 大小比較 ============================
+    // x < y (yの方が大きいときtrue)
+    // x <= y (yの方が大きいときtrue)
+    // x > y (yの方が大きいときtrue)
+    // x >= y (yの方が大きいときtrue)
+    // 4 + 2 > 6 ...false
+    // 4 + 2 >= 6 ...true
+    // 8 / 4 < 2 ...false
+    // 8 / 4 <= 2 ...true
+
   }
 }
